@@ -2,6 +2,7 @@
 # not cross-checked
 # python python_MC.py 'nsteps' 'nparticles'
 # e.g. python python_MC.py 100 125
+# version 1
 
 import random
 import numpy as np
