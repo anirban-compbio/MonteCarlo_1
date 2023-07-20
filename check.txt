@@ -1,2 +1,4 @@
 ; working on git and namd
-potential energy not coming correct; check this
+; potential energy not coming correct; check this ===> DONE
+; upload analysis scripts  ===> NOT DONE
+; MC for binary and Yukawa systems ===> NOT DONE
