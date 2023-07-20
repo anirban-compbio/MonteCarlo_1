@@ -1,1 +1,2 @@
-added this line
+; working on git and namd
+potential energy not coming correct; check this
