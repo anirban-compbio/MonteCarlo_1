@@ -42,7 +42,8 @@ max_bin=1000
 delr=box/(2*max_bin)
 
 file2 = open("potential.txt","w")
-ff = open("trajectory.xyz","w")
+ff1 = open("trajectory_folded.xyz","w")
+ff2 = open("trajectory_unfolded.xyz","w")
 
 #**************	simple cubic configuration => will eventually melt depending on t and rho*****************************
 
@@ -126,14 +127,17 @@ for step in range(0,nstep):
 	#*********** storing configuration *****************
 	
 	if (step%5==0):
-		print (n,file=ff)
-		print (n,step, file=ff)
+		print (n,file=ff1)
+		print (n,file=ff2)
+		print (n,step, file=ff1)
+		print (n,step, file=ff2)
 		for i in range (n):
 			rxstore = rx[i]-box*round(rx[i]*boxinv)
 			rystore = ry[i]-box*round(ry[i]*boxinv)
 			rzstore = rz[i]-box*round(rz[i]*boxinv)
-			print ("c", rxstore, rystore, rzstore,file=ff)
-
+			print ("C", rxstore, rystore, rzstore,file=ff1)
+			print ("C",rx[i],ry[i],rz[i],file=ff2)
 file2.close()
-ff.close()	
+ff1.close()
+ff2.close()	
 		
