@@ -1,2 +1,1 @@
-# python python_MC.py 'nsteps' 'nparticles'
-# e.g. python python_MC.py 1000 125
+in this branch, we shall simulate binary Lennard-Jones particles [different sizes]
